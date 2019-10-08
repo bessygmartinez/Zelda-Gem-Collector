@@ -1,0 +1,54 @@
+body {
+    background-image: url("../images/BotW_bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Signika', sans-serif;
+}
+
+.biggerp {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(74,83,78);
+}
+
+.opacity-4 {
+    background-color: rgba(249, 248, 218, 0.4);
+}
+
+.smaller-h1 {
+    font-size: 30px;
+    font-family: 'Signika', sans-serif;
+    color: rgb(74,83,78);
+}
+
+.text-color {
+    color: rgb(74,83,78);
+}
+
+.textspace {
+    letter-spacing: 15px;
+}
+
+.text-justify {
+    text-align: justify;
+  }
+
+  .master-number-img {
+      width: 100%;
+  }
+
+  .master-number {
+      top: 90px;
+      left: 65px;
+      width: 100%;
+      font-size:100px;
+  }
+
+  .your-total {
+    top: 90px;
+    right: 65px;
+    width: 100%;
+    font-size:100px;
+}
