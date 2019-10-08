@@ -10,10 +10,78 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/images/zelda_triforce.png" type="image/gif" sizes="16x16">
-    <title>Crystal Collector</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Signika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Zelda Crystal Collector</title>
 </head>
 
 <body>
+    <div class="container col-sm-12">
+        <div class="row bg-transparent m-4 text-center">
+            <div class="col-sm-4">
+                <img src="assets/images/ZeldaCrystalCollector.png" class="img-fluid" alt="Zelda Crystal Collector Logo">
+            </div>
+            <div class="col-sm-8 opacity-4 p-4 m-0 border border-secondary">
+                <h1 class="text-center text-color textspace"><STRONG>HOW TO PLAY</STRONG></h1>
+                <p class="biggerp text-color text-justify">In order to upgrade your Master Sword, you must
+                    match the Master Number by
+                    clicking on the crystals. Each crystal will add a specific amount to your total, but the value of
+                    each
+                    crystal is hidden. The Master Number and crystal values are changed after every game. If you
+                    successfully match the Master Number without going over, you win! Good luck!</p>
+            </div>  
+        </div>
+
+        <div class="row bg-transparent m-4 border border-secondary text-center text-color">
+                <div class="col opacity-4 p-2 text-right">
+                   <h1>Wins: <span id="playerWins"></span></h1>
+                </div>
+                <div class="col opacity-4 p-2 text-right">
+                        <h1>Losses:</h1> <span id="playerLosses"></span>
+                     </div>
+        </div>
+
+        <div class="row bg-transparent m-4 border border-secondary text-center">
+            <div class="col opacity-4 p-3">
+                <div class="position-relative master-number-img">
+                    <img src="assets/images/MasterNumber.png" alt="Master Number Placeholder">
+                    <p class="smaller-h1 master-number position-absolute">120
+                    </p>
+                </div>
+            </div>
+
+            <div class="col opacity-4 p-3">
+                <div class="position-relative master-number-img">
+                    <img src="assets/images/gems.png" alt="Gems Title">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/images/ruby.png" alt="Ruby">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/diamond.png" alt="Diamond">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/amber.png" alt="Amber">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/opal.png" alt="Opal">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col opacity-4 p-3">
+                <div class="position-relative master-number-img">
+                    <img src="assets/images/YourTotal.png" alt="Your Total Placeholder">
+                    <p class="smaller-h1 your-total position-absolute">120
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
 
 </body>
 
