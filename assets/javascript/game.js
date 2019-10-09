@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 	// random variables selected by computer
 	let randomNumber; // number to match
-	let gemNumbers = []; // for array of random crystal values
+	let gemNumbers = []; // for array of random gem values
 
 	let g1;
 	let g2;
@@ -53,9 +53,9 @@ $(document).ready(function() {
 
 	function pickRandomGems(arr) {
 
-		for (var y = 0; y < 4; y++){
+		for (let rg = 0; rg < 4; rg++){
 
-			var a = arr[Math.floor(Math.random() * arr.length)];
+			let a = arr[Math.floor(Math.random() * arr.length)];
 
 			gemNumbers.push(a);
 		}
@@ -69,8 +69,7 @@ $(document).ready(function() {
 		// change value of each gem button according to array
 		for (i = 0; i < arr.length; i++) {
 
-		$(".gemImg" + (i+1)).attr("value", arr[i]);
-		console.log(this);
+		$("#gem-" + (i+1)).attr("value", arr[i]);
 		}
 		g1 = arr[0];
 		g2 = arr[1];
@@ -81,7 +80,7 @@ $(document).ready(function() {
     //Game Reset
 	function gameReset(x) {
 
-		crystalNumbers = []; // clears gem number values
+		gemNumbers = []; // clears gem number values
 
 		pickRandomNumber(rand);
 
@@ -130,7 +129,7 @@ $(document).ready(function() {
 			$("#yourTotal").html(totalScore);
 		});
 
-	$(".gemImg").on("click", function() {
+	$("button").on("click", function() {
 		// this is what happens if the user wins
 		if (totalScore == randomNumber) {
 
