@@ -79,7 +79,7 @@ body {
 
   .gemImg,
   .gemBtn {
-      float: left;
+      max-width: 70%;
   }
 }
 
