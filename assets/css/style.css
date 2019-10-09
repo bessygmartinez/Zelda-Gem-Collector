@@ -43,12 +43,43 @@ body {
       top: 90px;
       left: 65px;
       width: 100%;
-      font-size:100px;
+      font-size:8vw;
   }
 
   .your-total {
     top: 90px;
     right: 65px;
     width: 100%;
-    font-size:100px;
+    font-size:8vw;
 }
+
+.gemBtn {
+    background-color: transparent;
+    border: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .master-number {
+        top: 40px;
+        left: 50px;
+        width: 100%;
+        font-size:100px;
+    }
+  
+    .your-total {
+      top: 40px;
+      right: 50px;
+      width: 100%;
+      font-size:100px;
+  }
+
+  .score {
+      font-size:20px;
+  }
+
+  .gemImg,
+  .gemBtn {
+      float: left;
+  }
+}
+
