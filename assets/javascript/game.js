@@ -93,8 +93,7 @@ $(document).ready(function() {
 
         alert(x);
 
-        youWinAudio.pause();
-        youLoseAudio.pause();
+
 	}
 
 	// Game start settings
