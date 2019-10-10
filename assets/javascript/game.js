@@ -20,7 +20,7 @@ $(document).ready(function() {
     console.log(gems);
     
     //Gets link for audio
-    const youWinAudio = new Audio ("assets/sounds/BOTW_fanfare.wav");
+    const youWinAudio = new Audio ("assets/sounds/OOT_Fanfare_Item.wav");
     const youLoseAudio = new Audio ("assets/sounds/LTTP_Link_Dying.wav");
 
 
