@@ -21,7 +21,11 @@ $(document).ready(function() {
     
     //Gets link for audio
     const youWinAudio = new Audio ("assets/sounds/OOT_Fanfare_Item.wav");
-    const youLoseAudio = new Audio ("assets/sounds/LTTP_Link_Dying.wav");
+	const youLoseAudio = new Audio ("assets/sounds/LTTP_Link_Dying.wav");
+	const gemSound1 = new Audio ("assets/sounds/TP_Rupee_Land.wav");
+	const gemSound2 = new Audio ("assets/sounds/TP_Get_Rupee.wav");
+	const gemSound3 = new Audio ("assets/sounds/WW_Get_Rupee.wav");
+	const gemSound4 = new Audio ("assets/sounds/ZSS_Rupee_Blue.wav");
 
 
 	// random variables selected by computer
@@ -108,24 +112,28 @@ $(document).ready(function() {
 
 			totalScore += g1;
 			$("#yourTotal").html(totalScore);
+			gemSound1.play();
 		});
 
 		$("#gem-2").on("click", function() {
 
 			totalScore += g2;
 			$("#yourTotal").html(totalScore);
+			gemSound2.play();
 		});
 
 		$("#gem-3").on("click", function() {
 
 			totalScore += g3;
 			$("#yourTotal").html(totalScore);
+			gemSound3.play();
 		});
 
 		$("#gem-4").on("click", function() {
 
 			totalScore += g4;
 			$("#yourTotal").html(totalScore);
+			gemSound4.play();
 		});
 
 	$("button").on("click", function() {
